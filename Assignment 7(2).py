@@ -12,12 +12,12 @@ def password():
             mistakes +=1
         elif not re.search("[0-9]", Password):
             mistakes +=1
-        elif not re.search("[!@#$%^&*()_+]", Password ):
+        elif not re.search("[!@:#;$'\-=%^>&*(/)<_+]", Password ):
             mistakes +=1
-        if mistakes > 1:
-            print("Your password is INVALID")
-        elif mistakes == 0:
-            print("Your password is VALID")
+    if mistakes > 1:
+        print("Your password is INVALID")
+    elif mistakes == 0:
+        print("Your password is VALID")
         
     
 
